@@ -11,7 +11,7 @@
 <meta name="keywords" content="study abroad consultation, IELTS coaching, DET coaching, SAT coaching, SAT preparation, Duolingo English Test, study in USA, study in UK, study in Canada, study in Germany, study in Finland, study in Ireland, study in Italy, study in Romania, study in Bulgaria, university admissions, SOP writing, scholarship assistance, visa documentation">
 <meta name="author" content="Stellar Study Abroad">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://stellarstudyabroad.com/">
+<link rel="canonical" href="https://stellarstudy.vercel.app/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Stellar Study Abroad — International Education Studio">
@@ -175,7 +175,8 @@ a{color:inherit;text-decoration:none}
   width:32vw;max-width:460px;min-width:280px;aspect-ratio:3/4;overflow:hidden;
   border-radius:3px;box-shadow:0 30px 80px rgba(0,0,0,.6);z-index:2;
 }
-.hero__portrait img{width:100%;height:100%;object-fit:cover;filter:brightness(.85) saturate(.9) contrast(1.05)}
+/* FIXED HERE: Configured image rule to preserve scaling container instead of expanding vertically */
+.hero__portrait img{width:100%;height:auto;max-height:100%;object-fit:cover;filter:brightness(.85) saturate(.9) contrast(1.05)}
 .hero__portrait::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,18,40,.6) 100%);pointer-events:none}
 .hero__portrait-tag{
   position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;
@@ -423,8 +424,7 @@ a{color:inherit;text-decoration:none}
   letter-spacing:.15em;
   text-transform:uppercase;
   color:var(--pure-white);
-  transition:max-width .35s var(--ease-quiet),margin .35s var(--ease-quiet);
-}
+  transition:max-width .35s var(--ease-quiet),margin .35s var(--ease-quiet)}
 .wa-float:hover{background:#25D366;border-color:#25D366;padding:14px 20px}
 .wa-float:hover svg{fill:#fff}
 .wa-float:hover span{max-width:120px;margin-left:10px}
